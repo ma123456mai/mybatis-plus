@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    schema: classpath:sqlMapper/schema-h2.sql.txt
+    data: classpath:sqlMapper/data-h2.sql.txt
+    url: jdbc:mysql://127.0.0.1:3306/user?useSSL=false&serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+server:
+  port: 9999
+  servlet.context-path: /mp
+mybatis:
+  type-aliases-package: com.mp.modle
+  mapper-locations: classpath:/sqlMapper/*
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+# Logger Config
+logging:
+  level:
+    com.baomidou.mybatisplus.samples.quickstart: debug
