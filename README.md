@@ -3,6 +3,7 @@
 ## 项目介绍
     
 * 本项目基于Spring-boot、Mybatis-plus搭建。
+* 官方文档：http://mp.baomidou.com/
 
 ## 环境要求
 *  Jdk1.8
